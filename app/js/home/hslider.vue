@@ -1,8 +1,8 @@
 <template lang="html">
   <article class="">
-    <Slider :items="items" cname="slider"/>
-     <section class="list">
-       <div class="item" v-for="item in enters" :key="item.img">
+    <Slider :items="items" :cname="$style.slider"/>
+     <section :class="$style.list">
+       <div :class="$style.item" v-for="item in enters" :key="item.img">
          <router-link :to="{ name: item.href }">
            <img :src="item.img" :alt="item.title">
            <h4>{{item.title}}</h4>
@@ -44,7 +44,7 @@ export default {
       },{
         href:'home',
         img:'//img12.360buyimg.com/jrpmobile/jfs/t4393/329/2180608902/13217/c88c0cec/58ec9dcdN1534e2d7.png',
-        title:'强钢蹦'
+        title:'抢钢蹦'
       },{
         href:'home',
         img:'//img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png',
@@ -56,10 +56,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
   @import "../../css/element.scss";
   .slider{
     margin-top:120px;
+    img{
+      width: 100%;
+    }
   }
   .list{
     @include list(row);

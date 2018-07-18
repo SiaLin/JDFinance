@@ -1,9 +1,9 @@
 <template lang="html">
-  <div class="header">
-    <span class="left">
+  <div :class="$style.header">
+    <span :class="$style.left">
       <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
     </span>
-    <btn class="btnDownload">APP下载</btn>
+    <btn :class="$style.btnDownload">APP下载</btn>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
 .header{
   color:#666;
    height: 100px;
@@ -26,7 +26,7 @@ export default {
    left: 0;
    right: 0;
    font-size: 32px;
-   background: #fff url(//m.jr.jd.com/spe/qyy/main/images/jr-logo.png) center center no-repeat;
+   background: #F9F9F9 url(//m.jr.jd.com/spe/qyy/main/images/jr-logo.png) center center no-repeat;
    background-size: auto 50%;
    z-index: 100;
    .left{

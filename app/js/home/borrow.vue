@@ -1,8 +1,8 @@
 <template lang="html">
-  <Panel title="极速借贷" :class="panel">
-    <section :class="content">
-      <router-link :to="{ name: 'home', params: {} }">
-        <img src="//img12.360buyimg.com/jrpmobile/jfs/t20746/93/1719082958/12040/306a2296/5b31b40dNeefe4c3c.png?width=750&amp;height=200" alt="">
+  <Panel title="极速借贷" :class="$style.panel">
+    <section :class="$style.content">
+      <router-link :to="{ name: 'home' }">
+        <img src="//img12.360buyimg.com/jrpmobile/jfs/t12721/42/2497849749/26333/ec584be4/5a421756N2416c88f.png" alt="">
       </router-link>
     </section>
   </Panel>
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
 @import "../../css/element.scss";
 .panel{
   @include panel;

@@ -48,7 +48,4 @@ export default {
 
 <style lang="css">
   @import "~swiper/dist/css/swiper.css";
-  .slider img{
-    width:100%;
-  }
 </style>
